@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    .child {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 4px;
+        padding: 20px;
+        height: 325px;
+        width: 250px;
+    }
+
+    .parent {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(68, 172, 156, 0.799);
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3 {
+        color: black;
+    }
+
+    span {
+        text-decoration: underline;
+        text-decoration-color: rgba(33, 123, 110, 0.799);
+    }
+
+    button {
+        color: white;
+        background-color: rgba(34, 112, 101, 0.799);
+        border: 10px solid rgba(51, 148, 133, 0.799);
+        border-radius: 4px;
+        width: 258px;
+    }
+
+    input {
+        width: 100%;
+        height: 25px;
+    }
+
+    p {
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .abc {
+        color: rgba(38, 104, 94, 0.799);
+        text-decoration: none;
+    }
+
+</style>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="head">
+                <h2><span>Reg</span>istration</h2>
+                <br /><br />
+            </div>
+            <div class="formm">
+                <form class="form" method="get">
+                    <input required type="number" id="id" name="id" placeholder="Enter your ID " /> <br>
+                    <input required type="text" id="name" name="name" placeholder="Enter your Full Name " /> <br>
+                    <input required type="email" id="email" name="email" placeholder="Enter your Email" /> <br>
+                    <input required type="password" id="password" name="password" placeholder="Enter your Password " />
+                    <br>
+                    <button>Register Now</button>
+                </form><br>
+                <p>Already have an account ? <span><a class="abc" href="login.html">Login Now</a></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
